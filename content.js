@@ -1,4 +1,17 @@
 (() => {
+  // List of translations for "Map" in common languages
+  const mapTranslations = [
+    "Map",          // English
+    "Karte",        // German
+    "Carte",        // French
+    "Mapa",         // Spanish
+    "Mappa",        // Italian
+    "地図",          // Japanese
+    "지도",          // Korean
+    "Карта",        // Russian
+    "地图",          // Simplified Chinese
+    "แผนที่",         // Thai
+  ];
 
   // Add a link overlay for embedded Google Maps Views
   function addMapViewOverlay(element) {
@@ -54,8 +67,10 @@
       const mapImage = Array.from(document.querySelectorAll('g-img')).find(img =>
         img.id == "lu_map"
       );
+
+      // check if aria-label is "Map"
       const mapDiv = Array.from(document.querySelectorAll('div')).find(div =>
-        div.ariaLabel == "Map"
+        mapTranslations.includes(div.ariaLabel)
       );
 
       if (mapImage) {
