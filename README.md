@@ -1,6 +1,6 @@
 # MapsRedirectorExtension
 
-A simple Chrome extension to add redirection overlays to Google Maps images or embedded views in Google Search and open the location in a new Google Maps tab. 
+A simple Chrome extension to automatically add redirection overlays to Google Maps images and embedded views and bring back the \"Maps\" tab for EU users.
 
 ## Image Overlay
 ![image_overlay](images/image_example.png "Image Overlay")

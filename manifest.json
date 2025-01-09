@@ -1,8 +1,8 @@
  {
   "manifest_version": 3,
   "name": "Google Maps Redirector",
-  "version": "1.0",
-  "description": "Adds an overlay to Google Maps images and embedded elements to redirect to a new Google Maps tab.",
+  "version": "1.1",
+  "description": "Automatically add redirection overlays to Google Maps images and embedded views and bring back the \"Maps\" tab.",
   "permissions": ["activeTab", "scripting"],
   "content_scripts": [
     {
